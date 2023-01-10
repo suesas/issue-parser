@@ -1,0 +1,15 @@
+modules:
+  jira:issuePanel:
+    - key: issue-parser-panel
+      function: main
+      title: Lebenslauf
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/677a32a0-6b78-4e6e-bf12-791a2465ef20
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
